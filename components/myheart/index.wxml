@@ -1,0 +1,6 @@
+<!--components/myheart/index.wxml-->
+<!-- <text>components/myheart/index.wxml</text> -->
+
+<view>
+  <van-icon wx:for="{{num}}" wx:key="{{index}}" bindtap="changeLike" name="{{like?'like':'like-o'}}" />
+</view>

@@ -1,0 +1,5 @@
+<!--pages/navigate/index.wxml-->
+<view class="container">
+<view>这是导航过来的页面</view>
+<view>当前浏览的商品为{{goodid}}</view>
+</view>

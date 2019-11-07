@@ -1,0 +1,19 @@
+<!--pages/componentpage/index.wxml-->
+
+
+<view class="container">
+ 
+    <text>喜欢组件</text>
+  <text>当前状态为：{{likeStatus?'喜欢':'不喜欢'}} </text>
+  <my-heart bind:likeStatus="likeChange" num="{{5}}"></my-heart>
+ 
+  <view>
+  -----------------------
+  </view>
+
+ 
+  <text>评星组件</text>
+  <text>当前评星为：{{rateNum}}</text>
+  <my-rate bind:rateStatus="rateChange" rateNum="{{rateNum}}"></my-rate>
+  
+</view>

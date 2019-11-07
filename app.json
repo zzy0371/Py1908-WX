@@ -1,0 +1,58 @@
+{
+  "pages": [
+    "pages/home/index",
+    "pages/tasks/index",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/navigate/index",
+    "pages/joke/index",
+    "pages/componentpage/index"
+    
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "text": "首页",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/homeselect.png"
+      },
+      {
+        "pagePath": "pages/joke/index",
+        "text": "笑话",
+        "iconPath": "images/joke.png",
+        "selectedIconPath": "images/jokeselect.png"
+      },
+      {
+        "pagePath": "pages/tasks/index",
+        "text": "奇妙清单",
+        "iconPath": "images/task.png",
+        "selectedIconPath": "images/taskselect.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "我的",
+        "iconPath": "images/me.png",
+        "selectedIconPath": "images/meselect.png"
+      }
+    ]
+  },
+  "window": {
+    "navigationBarBackgroundColor": "#1296DB",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "小程序",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": true
+  },
+  "style": "v2",
+  "usingComponents": {
+    "van-rate": "vant-weapp/rate/index",
+    "van-cell": "vant-weapp/cell/index",
+    "van-cell-group": "vant-weapp/cell-group/index",
+    "van-field": "vant-weapp/field/index",
+    "van-icon": "vant-weapp/icon/index",
+    "van-button": "vant-weapp/button/index",
+    "van-panel": "vant-weapp/panel/index"
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,6 @@
+<!--components/myrate/index.wxml-->
+<view class="container">
+
+<van-icon bindtap="setRate" data-num="{{index+1}}" wx:for="{{8}}" wx:key="{{index}}" name="{{index+1<=rateNum?'star':'star-o'}}" />
+
+</view>

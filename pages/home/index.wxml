@@ -1,0 +1,58 @@
+<!--pages/home/index.wxml-->
+<view class="container">
+  <text>孙夹克</text>
+
+  <text class="blue">穆少华</text>
+
+
+  <text>{{name}}</text>
+
+   <text>{{age}}</text>
+
+  <text>{{age<16?"未成年":"已成年"}}</text>
+
+
+  <text wx:if="{{score>90}}">优秀</text>
+  <text wx:elif="{{score>70}}">还行吧</text>
+  <text wx:else>如此渣渣</text>
+
+
+  <text wx:for="{{hobbys}}" wx:key="{{index}}">{{index+1}}--{{item.name}} </text>
+
+  <text wx:for="{{hobbys}}" wx:key="{{index}}" wx:for-item="myitem" wx:for-index="myindex">{{myindex+1}}--{{myitem.name}}</text>
+
+
+  <view>
+  <text bindtap="start" data-age="20" data-name="zzy">开始 </text>
+
+  <text bindtap="stop"> 结束</text>
+  </view>
+
+
+  <view>
+    <view><text>你输入的为{{inputValue}}</text></view>
+    <view>
+        <text>请输入:</text>
+        <input bindconfirm="valueChange" placeholder="将会获取焦点"  />
+    </view>
+  </view>
+  
+
+  <view>
+  <text>你的评星为：{{value}}</text>
+  <van-rate value="{{ value }}" bind:change="onChange" />
+  </view>
+
+
+  <view>
+  <van-button type="primary" bindtap="goLog">跳转组件页面</van-button>
+  </view>
+
+  <view>
+  <navigator url="/pages/navigate/index?id=1001" open-type="navigate">导航标签 类似a标签(1001)</navigator>
+  </view>
+
+    <view>
+  <navigator url="/pages/navigate/index?id=1003" open-type="navigate">导航标签 类似a标签(1003)</navigator>
+  </view>
+</view>

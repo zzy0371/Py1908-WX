@@ -1,0 +1,10 @@
+<!--pages/joke/index.wxml-->
+<view class="container">
+<view wx:for="{{jokes}}" wx:if="{item.title}" wx:key="{{item.title}}">
+  <van-panel title="{{item.title}}" desc="{{item.source}}--{{item.date}}">
+    <view class="content">{{item.summary}}</view>
+  </van-panel>
+
+</view>
+
+</view>

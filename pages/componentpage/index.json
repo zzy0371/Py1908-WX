@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "my-heart":"/components/myheart/index",
+    "my-rate": "/components/myrate/index"
+  }
+}

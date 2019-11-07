@@ -1,0 +1,20 @@
+<!--pages/tasks/index.wxml-->
+<!-- <text>pages/tasks/index.wxml</text> -->
+<view class="container">
+
+  <view class="content">
+    <van-cell-group>
+      <van-field value="{{ value }}" placeholder="请输入任务" border="{{ true }}" bind:confirm="onConfirm" />
+    </van-cell-group>
+
+
+    <van-cell-group>
+      <van-cell wx:for="{{taskList}}" wx:key="{{index}}" 
+                title="{{index+1}} . {{item}}" border="{{ true }}">
+        <van-icon bind:click="delTask" data-index="{{index}}" slot="right-icon" name="cross" class="custom-icon" />
+
+      </van-cell>
+    </van-cell-group>
+  </view>
+
+</view>
